@@ -6,7 +6,7 @@ describe('Login / Logout Test', () => {
 	});
 
 	it('should try to login with invalid data', () => {
-		cy.get('#login_from').should('be.visible');
+		cy.get('#login_form').should('be.visible');
 		cy.get('#user_login').type('Invalid Username');
 		cy.get('#user_password').type('Invalid password');
 		cy.contains('Sign in').click();

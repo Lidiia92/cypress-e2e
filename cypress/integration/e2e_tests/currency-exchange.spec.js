@@ -15,7 +15,6 @@ describe('Currency Exchange Test', () => {
 		cy.get('#pc_currency').select('GBP');
 		cy.get('#pc_amount').type('2000');
 		cy.get('#pc_inDollars_true').click();
-		cy.get('#pay_bills_tab').click();
 		cy.get('#pc_calculate_costs').click();
 	});
 

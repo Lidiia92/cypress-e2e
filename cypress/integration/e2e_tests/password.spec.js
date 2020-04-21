@@ -8,7 +8,7 @@ describe('Password Test', () => {
 	});
 
 	it('should click on the forgot password button', () => {
-		cy.get('.offset > a').click();
+		cy.get('.offset3 > a').click();
 	});
 
 	it('should fill email field', () => {

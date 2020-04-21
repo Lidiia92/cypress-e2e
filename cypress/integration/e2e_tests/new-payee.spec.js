@@ -21,7 +21,7 @@ describe('New Payee Test', () => {
 		cy.get('#np_new_payee_name').type('Name');
 		cy.get('#np_new_payee_address').type('Address');
 		cy.get('#np_new_payee_account').type('65433');
-		cy.get('add_new_payee').click();
+		cy.get('#add_new_payee').click();
 	});
 
 	it('should show sucess message', () => {

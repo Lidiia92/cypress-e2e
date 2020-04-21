@@ -17,11 +17,12 @@ describe('Payment Test', () => {
 		cy.get('#sp_amount').type('2000');
 		cy.get('#sp_date').type('2020-01-10 {enter}');
 		cy.get('#sp_description').type('test');
+		cy.get('.btn-primary').click();
 	});
 
 	it('should show sucess message', () => {
 		cy.get('#alert_content')
 			.should('be.visible')
-			.and('contain', 'The payment was successfully submited');
+			.and('contain', 'The payment was successfully submitted.');
 	});
 });

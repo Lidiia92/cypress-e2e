@@ -10,7 +10,7 @@ describe('Payment Test', () => {
 	});
 
 	it('should send new payment (fake)', () => {
-		cy.get('pay_bills_tab').click();
+		cy.get('#pay_bills_tab').click();
 		cy.contains('Pay Saved Payee').click();
 		cy.get('#sp_payee').select('wellsfargo');
 		cy.get('#sp_account').select('Credit Card');
